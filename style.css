@@ -176,3 +176,7 @@ h1 span{display:inline-block;margin-top:6px;background:var(--w);color:var(--k);p
   .hero-copy .facts div{padding-top:16px}
   .hero-art .cap{top:auto;bottom:16px}
 }
+.org-l{font:600 11px Inter,sans-serif;letter-spacing:.26em;text-transform:uppercase;color:#9a9a9a;margin-bottom:8px}
+.vpa{display:inline-flex;flex-direction:column;align-items:center;text-decoration:none;color:#fff;margin-bottom:12px}
+.vpa-wm{font:900 italic 46px/0.9 "Barlow Condensed",Impact,sans-serif;letter-spacing:.02em}
+.vpa-sub{font:700 10px Inter,sans-serif;letter-spacing:.28em;text-transform:uppercase;margin-top:6px}
