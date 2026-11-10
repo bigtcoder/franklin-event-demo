@@ -156,3 +156,9 @@ h1 span{display:inline-block;margin-top:6px;background:var(--w);color:var(--k);p
 }
 @media(min-width:900px){.hero-art .cap{top:auto;bottom:26px;right:0;max-width:120px}}
 @media(min-width:900px){.hero-art .athlete{right:16%}}
+/* v5: Hayden (black kit) on light angled panel */
+.hero-art .panel{background:#f1f1f1}
+.hero-art .panel::before{background:#0a0a0a;opacity:0}
+.hero-art .athlete{filter:drop-shadow(0 12px 26px rgba(0,0,0,.28))}
+@media(max-width:899px){.hero-art .athlete{right:8%}}
+@media(min-width:900px){.hero-art .athlete{right:22%;height:100%}.hero-art .cap{color:#555}.hero-art .cap::before{background:#000}}
