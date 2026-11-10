@@ -3,7 +3,9 @@
   var SB_KEY='sb_publishable_aloB5avvX57YFVyEv6JP_g_BW4Iu_gt';
   var f=document.getElementById('regForm'),err=document.getElementById('formErr'),btn=document.getElementById('submitBtn'),ok=document.getElementById('success');
   var sticky=document.getElementById('stickyCta'),reg=document.getElementById('register');
-  if('IntersectionObserver' in window){new IntersectionObserver(function(e){sticky.classList.toggle('hide',e[0].isIntersecting)},{threshold:.05}).observe(reg)}
+  var heroCta=document.querySelector('.hero .btn-main'),vis={};
+  sticky.classList.add('hide');
+  if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){vis[e.target===reg?'r':'h']=e.isIntersecting});sticky.classList.toggle('hide',!!(vis.r||vis.h))},{threshold:0});io.observe(reg);if(heroCta)io.observe(heroCta)}
   function v(n){var el=f.elements[n];return el?(el.value||'').trim():''}
   function bad(el,on){if(el)el.classList.toggle('bad',on)}
   function show(m,el){err.textContent=m;err.hidden=false;if(el&&el.focus){el.focus()}else err.scrollIntoView({block:'center'})}
