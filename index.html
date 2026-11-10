@@ -9,29 +9,39 @@
 <meta name="robots" content="noindex">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,800;1,800;1,900&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=2">
+<link rel="preload" as="image" href="assets/hayden.webp">
+<link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
-<div class="demo-bar">DEMO / PITCH DRAFT · items in <span class="ph">[brackets]</span> are placeholders</div>
+<div class="demo-bar">Demo draft · <span class="ph">[highlighted]</span> = to be confirmed</div>
 
 <header class="top">
-  <a href="#" class="brand"><span class="wm">FRANKLIN</span><span class="wm-sub">PRESENTS</span></a>
+  <a href="#" class="brand" aria-label="Franklin Open Da Nang"><img src="assets/franklin_logo_white.png" alt="Franklin" width="800" height="241"><span class="wm-sub">OPEN · DA NANG</span></a>
   <a href="#register" class="top-cta">Register</a>
 </header>
 
-<section class="hero pattern">
-  <div class="hero-inner">
-    <div class="live"><span class="dot"></span>LIVESTREAMED</div>
-    <p class="kicker">Franklin Pickleball presents</p>
-    <h1>FRANKLIN<br>OPEN<br><span>DA NANG</span></h1>
-    <p class="ph-note">[Working title, event name TBC]</p>
-    <div class="facts">
-      <div><b>When</b><span class="ph">[Date TBC]</span></div>
-      <div><b>Where</b><span class="ph">[Venue TBC], Da Nang</span></div>
-      <div><b>Prize</b><span><span class="ph">[Cash pool TBC]</span> + Franklin gear</span></div>
+<section class="hero">
+  <div class="hero-grid">
+    <div class="hero-art" aria-hidden="false">
+      <div class="panel"></div>
+      <img class="athlete" src="assets/hayden.webp" alt="Franklin athlete Hayden Patriquin holding a Franklin C45 paddle" width="1148" height="1476" fetchpriority="high">
+      <p class="cap">Franklin athlete Hayden Patriquin</p>
     </div>
-    <a href="#register" class="btn btn-main">Register now</a>
-    <a href="https://zalo.me/84798350171" class="btn-link" rel="noopener">Or message us on Zalo</a>
+    <div class="hero-copy">
+      <div class="badges"><span class="live"><span class="dot"></span>LIVESTREAMED</span><span class="tag">Doubles · 3 divisions</span></div>
+      <p class="kicker">Franklin Pickleball presents</p>
+      <h1>FRANKLIN OPEN <span>DA NANG</span></h1>
+      <p class="ph-note">Working title · event name TBC</p>
+      <div class="cta-row">
+        <a href="#register" class="btn btn-main">Register now</a>
+        <a href="https://zalo.me/84798350171" class="btn-link" rel="noopener">or message us on Zalo</a>
+      </div>
+      <dl class="facts">
+        <div><dt>Date</dt><dd><span class="ph">[Date TBC]</span></dd></div>
+        <div><dt>Venue</dt><dd><span class="ph">[Venue TBC]</span>, Da Nang</dd></div>
+        <div><dt>Prizes</dt><dd><span class="ph">[Cash TBC]</span> + Franklin gear</dd></div>
+      </dl>
+    </div>
   </div>
 </section>
 
@@ -57,7 +67,7 @@
   </div>
 </section>
 
-<section class="sec dark pattern" id="prizes">
+<section class="sec dark" id="prizes">
   <h2 class="slab inv">PRIZES</h2>
   <p class="lead">Franklin gear on top of the cash payout in every division.</p>
   <div class="podium">
@@ -157,18 +167,18 @@
   <details><summary>How much is it and how do I pay?</summary><p><span class="ph">[Fee TBC]</span> per pair. We send payment details on Zalo after you register.</p></details>
 </section>
 
-<footer class="foot pattern">
+<footer class="foot">
   <p class="pres">Presented by</p>
-  <div class="wm big">FRANKLIN</div>
-  <p class="pres">PICKLEBALL</p>
+  <img class="foot-logo" src="assets/franklin_logo_white.png" alt="Franklin" width="800" height="241" loading="lazy">
+  <p class="pres">Pickleball</p>
   <div class="org">
     <p>Organised by <b>Papi Point</b>, Da Nang</p>
     <p><a href="https://zalo.me/84798350171" rel="noopener">Contact on Zalo</a></p>
   </div>
-  <p class="legal">This is the event's own website. Franklin and Franklin Pickleball are trademarks of Franklin Sports, Inc. and are used here to identify the event sponsor. Demo draft, details subject to change.</p>
+  <p class="legal">This is the event's own website, not an official Franklin Sports site. Franklin and Franklin Pickleball are trademarks of Franklin Sports, Inc., used to identify the event sponsor. Athlete image © Franklin Sports, shown as brand imagery only; the athlete is not confirmed to attend. Demo draft, details subject to change.</p>
 </footer>
 
 <a href="#register" class="sticky-cta" id="stickyCta">Register now</a>
-<script src="app.js?v=1" defer></script>
+<script src="app.js?v=3" defer></script>
 </body>
 </html>
