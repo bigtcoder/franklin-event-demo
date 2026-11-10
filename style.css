@@ -162,3 +162,17 @@ h1 span{display:inline-block;margin-top:6px;background:var(--w);color:var(--k);p
 .hero-art .athlete{filter:drop-shadow(0 12px 26px rgba(0,0,0,.28))}
 @media(max-width:899px){.hero-art .athlete{right:8%}}
 @media(min-width:900px){.hero-art .athlete{right:22%;height:100%}.hero-art .cap{color:#555}.hero-art .cap::before{background:#000}}
+/* v6: mobile order = badges/title, Register, photo, facts */
+@media(max-width:899px){
+  .hero-copy{display:contents}
+  .hero-copy>*{padding-left:20px;padding-right:20px}
+  .hero-copy .badges{order:1;padding-top:22px}
+  .hero-copy .kicker{order:2}
+  .hero-copy h1{order:3}
+  .hero-copy .ph-note{order:4}
+  .hero-copy .cta-row{order:5;margin:18px 0 22px}
+  .hero-art{order:6;height:min(52vh,430px)}
+  .hero-copy .facts{order:7;margin:0 20px;padding:0 0 32px;border-top:0}
+  .hero-copy .facts div{padding-top:16px}
+  .hero-art .cap{top:auto;bottom:16px}
+}
