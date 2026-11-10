@@ -9,21 +9,22 @@
   function v(n){var el=f.elements[n];return el?(el.value||'').trim():''}
   function bad(el,on){if(el)el.classList.toggle('bad',on)}
   function show(m,el){err.textContent=m;err.hidden=false;if(el&&el.focus){el.focus()}else err.scrollIntoView({block:'center'})}
-  f.addEventListener('input',function(e){bad(e.target,false);if(e.target.name==='division')bad(f.querySelector('.seg'),false);err.hidden=true});
+  f.addEventListener('input',function(e){bad(e.target,false);err.hidden=true});
   f.addEventListener('submit',function(e){
     e.preventDefault();err.hidden=true;
     var p1=f.elements.player1_name,p2=f.elements.player2_name,ph=f.elements.phone;
     if(v('player1_name').length<2){bad(p1,true);return show('Please enter player 1\'s name.',p1)}
     if(v('player2_name').length<2){bad(p2,true);return show('Please enter player 2\'s name.',p2)}
-    var div=f.querySelector('input[name=division]:checked');
-    if(!div){bad(f.querySelector('.seg'),true);return show('Please pick a division.')}
+    var cat=f.elements.category,lvl=f.elements.level;
+    if(!cat.value){bad(cat,true);return show('Please choose a category.',cat)}
+    if(!lvl.value){bad(lvl,true);return show('Please choose a level.',lvl)}
     var digits=v('phone').replace(/[^\d]/g,'');
     if(digits.length<9||digits.length>15){bad(ph,true);return show('Please enter a phone / Zalo number we can reach.',ph)}
     var em=v('email');
     if(em&&!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em)){bad(f.elements.email,true);return show('That email doesn\'t look right (or leave it blank).',f.elements.email)}
     if(!f.elements.consent.checked){return show('Please tick the box to agree to be contacted.',f.elements.consent)}
     var g=f.querySelector('input[name=franklin_gear]:checked');
-    var row={player1_name:v('player1_name'),player2_name:v('player2_name'),phone:v('phone').slice(0,20),email:em||null,division:div.value,
+    var row={player1_name:v('player1_name'),player2_name:v('player2_name'),phone:v('phone').slice(0,20),email:em||null,category:cat.value,level:lvl.value,
       p1_system:v('p1_system'),p1_rating:v('p1_rating')||null,p2_system:v('p2_system'),p2_rating:v('p2_rating')||null,
       franklin_gear:!!(g&&g.value==='yes'),notes:v('notes')||null,consent:true,user_agent:(navigator.userAgent||'').slice(0,300)};
     btn.disabled=true;btn.textContent='Sending…';

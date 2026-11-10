@@ -209,3 +209,18 @@ details p a{text-decoration:underline;font-weight:600}
   .ath figcaption{font-size:30px;left:24px;bottom:22px}
 }
 @media(min-width:860px){.paddle-hero img{aspect-ratio:16/9;object-fit:cover;object-position:50% 45%}}
+/* v13: categories & levels */
+.rate.two-sel{grid-template-columns:1fr 1fr;padding-left:0;border-left:0;margin:0}
+select.bad{border-color:#e10600!important;outline:2px solid #e10600}
+.feature-div{background:var(--k);color:var(--w);padding:20px 20px 22px;margin-bottom:16px}
+.feature-div h3{font:900 italic 30px/1 "Barlow Condensed",sans-serif;margin:12px 0 8px}
+.feature-div p{font-size:15px;color:#ddd}
+.live.sm{font-size:13px;padding:5px 11px}
+.grid-wrap{overflow-x:auto}
+.lvl{width:100%;border-collapse:collapse;text-align:center;font-size:15px}
+.lvl th,.lvl td{padding:11px 6px;border-bottom:1px solid #ddd}
+.lvl thead th{background:var(--k);color:var(--w);font:800 italic 17px "Barlow Condensed",sans-serif;text-transform:uppercase}
+.lvl tbody th{text-align:left;font:900 italic 20px "Barlow Condensed",sans-serif;padding-left:12px}
+.lvl tbody tr:nth-child(odd){background:var(--g)}
+.lvl tr.open{background:var(--k)!important;color:var(--w)}
+.lvl td{font-weight:700}

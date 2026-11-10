@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,800;1,800;1,900&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="preload" as="image" href="assets/hayden-577.webp" imagesrcset="assets/hayden-400.webp 400w, assets/hayden-577.webp 577w" imagesizes="(min-width:900px) 290px, 210px">
-<link rel="stylesheet" href="style.css?v=12">
+<link rel="stylesheet" href="style.css?v=13">
 </head>
 <body>
 <div class="demo-bar">Demo draft · <span class="ph">[highlighted]</span> = to be confirmed</div>
@@ -28,7 +28,7 @@
       <p class="cap">Franklin athlete Hayden Patriquin</p>
     </div>
     <div class="hero-copy">
-      <div class="badges"><span class="live"><span class="dot"></span>LIVESTREAMED</span><span class="tag">Doubles · 3 divisions</span></div>
+      <div class="badges"><span class="live"><span class="dot"></span>LIVESTREAMED</span><span class="tag">Men's · Women's · Mixed</span></div>
       <p class="kicker">Franklin Pickleball presents</p>
       <h1>FRANKLIN OPEN <span>DA NANG</span></h1>
       <p class="ph-note">Working title · event name TBC</p>
@@ -37,7 +37,7 @@
         <a href="https://zalo.me/84798350171" class="btn-link" rel="noopener">or message us on Zalo</a>
       </div>
       <dl class="facts">
-        <div><dt>Date</dt><dd><span class="ph">[Date TBC]</span></dd></div>
+        <div><dt>Date</dt><dd><span class="ph">[Dates TBC]</span></dd></div>
         <div><dt>Venue</dt><dd><span class="ph">[Venue TBC]</span>, Da Nang</dd></div>
         <div><dt>Prizes</dt><dd><span class="ph">[Cash TBC]</span> + Franklin gear</dd></div>
       </dl>
@@ -69,7 +69,7 @@
 
 <section class="sec dark" id="prizes">
   <h2 class="slab inv">PRIZES</h2>
-  <p class="lead">Franklin gear on top of the cash payout in every division.</p>
+  <p class="lead">Franklin gear on top of the cash payout in every category.</p>
   <div class="podium">
     <div class="pl p1 cut"><span class="pos">1ST</span><h3>Champions</h3><p><span class="ph">[Cash TBC]</span><br><b>+ 2 Franklin paddles</b> <span class="ph">[model TBC]</span></p></div>
     <div class="pl p2 cut"><span class="pos">2ND</span><h3>Runners-up</h3><p><span class="ph">[Cash TBC]</span><br><b>+ 2 Franklin bags</b></p></div>
@@ -90,14 +90,27 @@
 </section>
 
 <section class="sec" id="schedule">
-  <h2 class="slab">SCHEDULE &amp; DIVISIONS</h2>
-  <p class="lead">Doubles. Pick the division that fits your level.</p>
-  <div class="rows">
-    <div class="row"><div><h3>Beginner</h3><p class="ph">[Level range TBC]</p></div><div class="time ph">[Time TBC]</div></div>
-    <div class="row"><div><h3>Intermediate</h3><p class="ph">[Level range TBC]</p></div><div class="time ph">[Time TBC]</div></div>
-    <div class="row"><div><h3>Advanced</h3><p class="ph">[Level range TBC]</p></div><div class="time ph">[Time TBC]</div></div>
+  <h2 class="slab">CATEGORIES &amp; LEVELS</h2>
+  <p class="lead">A big multi-category doubles event over <span class="ph">[dates TBC]</span>. Men's, Women's and Mixed at every level, plus an Open / Pro headline division.</p>
+  <div class="feature-div cut">
+    <span class="live sm"><span class="dot"></span>ON THE LIVESTREAM</span>
+    <h3>OPEN / PRO DIVISION</h3>
+    <p>The headline division. Feature matches are played on the main court and streamed live. Men's, Women's and Mixed <span class="ph">[format TBC]</span>.</p>
   </div>
-  <p class="small">Entry fee: <span class="ph">[Fee TBC]</span> per pair. Format: <span class="ph">[Format TBC]</span>. DUPR, PVNA and other ratings all accepted.</p>
+  <div class="grid-wrap">
+    <table class="lvl">
+      <thead><tr><th>Level</th><th>Men's</th><th>Women's</th><th>Mixed</th></tr></thead>
+      <tbody>
+        <tr><th>2.5</th><td>✓</td><td>✓</td><td>✓</td></tr>
+        <tr><th>3.0</th><td>✓</td><td>✓</td><td>✓</td></tr>
+        <tr><th>3.5</th><td>✓</td><td>✓</td><td>✓</td></tr>
+        <tr><th>4.0</th><td>✓</td><td>✓</td><td>✓</td></tr>
+        <tr><th>4.5+</th><td>✓</td><td>✓</td><td>✓</td></tr>
+        <tr class="open"><th>Open / Pro</th><td>✓</td><td>✓</td><td>✓</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="small">Exact level caps <span class="ph">[TBC]</span> · Schedule by category <span class="ph">[times TBC]</span> · Entry fee <span class="ph">[TBC]</span> per pair. DUPR, PVNA, VPA and other ratings all accepted.</p>
 </section>
 
 <section class="sec reg" id="register">
@@ -120,11 +133,10 @@
     </fieldset>
 
     <fieldset>
-      <legend>Division</legend>
-      <div class="seg" role="radiogroup">
-        <label><input type="radio" name="division" value="beginner" required><span>Beginner</span></label>
-        <label><input type="radio" name="division" value="intermediate"><span>Intermediate</span></label>
-        <label><input type="radio" name="division" value="advanced"><span>Advanced</span></label>
+      <legend>Category &amp; level</legend>
+      <div class="rate two-sel">
+        <label>Category<select name="category" required><option value="">Choose…</option><option value="mens">Men's doubles</option><option value="womens">Women's doubles</option><option value="mixed">Mixed doubles</option></select></label>
+        <label>Level<select name="level" required><option value="">Choose…</option><option value="2.5">2.5</option><option value="3.0">3.0</option><option value="3.5">3.5</option><option value="4.0">4.0</option><option value="4.5+">4.5+</option><option value="open">Open / Pro</option></select></label>
       </div>
     </fieldset>
 
@@ -162,7 +174,7 @@
   </div>
 
   <ol class="steps">
-    <li><b>Send the form</b> with both names, division and ratings.</li>
+    <li><b>Send the form</b> with both names, category, level and ratings.</li>
     <li><b>We confirm on Zalo</b> and send payment details.</li>
     <li><b>Pay to lock your spot.</b> First 20 paid enter the lucky draw.</li>
   </ol>
@@ -191,6 +203,6 @@
 </footer>
 
 <a href="#register" class="sticky-cta" id="stickyCta">Register now</a>
-<script src="app.js?v=12" defer></script>
+<script src="app.js?v=13" defer></script>
 </body>
 </html>
