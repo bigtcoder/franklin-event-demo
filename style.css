@@ -180,3 +180,4 @@ h1 span{display:inline-block;margin-top:6px;background:var(--w);color:var(--k);p
 .vpa{display:inline-flex;flex-direction:column;align-items:center;text-decoration:none;color:#fff;margin-bottom:12px}
 .vpa-wm{font:900 italic 46px/0.9 "Barlow Condensed",Impact,sans-serif;letter-spacing:.02em}
 .vpa-sub{font:700 10px Inter,sans-serif;letter-spacing:.28em;text-transform:uppercase;margin-top:6px}
+.vpa img{display:block;width:min(200px,52vw);height:auto;margin:2px auto 6px}
