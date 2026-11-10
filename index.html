@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Franklin Open Da Nang (working title) · Presented by Franklin Pickleball</title>
+<meta name="description" content="A livestreamed pickleball tournament in Da Nang, presented by Franklin Pickleball and organised by Papi Point. Register in one minute.">
+<meta name="theme-color" content="#0a0a0a">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,800;1,800;1,900&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=1">
+</head>
+<body>
+<div class="demo-bar">DEMO / PITCH DRAFT · items in <span class="ph">[brackets]</span> are placeholders</div>
+
+<header class="top">
+  <a href="#" class="brand"><span class="wm">FRANKLIN</span><span class="wm-sub">PRESENTS</span></a>
+  <a href="#register" class="top-cta">Register</a>
+</header>
+
+<section class="hero pattern">
+  <div class="hero-inner">
+    <div class="live"><span class="dot"></span>LIVESTREAMED</div>
+    <p class="kicker">Franklin Pickleball presents</p>
+    <h1>FRANKLIN<br>OPEN<br><span>DA NANG</span></h1>
+    <p class="ph-note">[Working title, event name TBC]</p>
+    <div class="facts">
+      <div><b>When</b><span class="ph">[Date TBC]</span></div>
+      <div><b>Where</b><span class="ph">[Venue TBC], Da Nang</span></div>
+      <div><b>Prize</b><span><span class="ph">[Cash pool TBC]</span> + Franklin gear</span></div>
+    </div>
+    <a href="#register" class="btn btn-main">Register now</a>
+    <a href="https://zalo.me/84798350171" class="btn-link" rel="noopener">Or message us on Zalo</a>
+  </div>
+</section>
+
+<section class="sec" id="perks">
+  <h2 class="slab">FRANKLIN PERKS</h2>
+  <p class="lead">Play Franklin, get more out of the day.</p>
+  <div class="cards">
+    <article class="card cut">
+      <div class="num">01</div>
+      <h3>PLAY FRANKLIN, DRINK FREE</h3>
+      <p>Bring a Franklin paddle or wear Franklin gear and your drinks are on us all day.</p>
+    </article>
+    <article class="card cut">
+      <div class="num">02</div>
+      <h3>CHECK IN IN FRANKLIN</h3>
+      <p>Show your Franklin paddle or gear at check-in to get exclusive Franklin balls.</p>
+    </article>
+    <article class="card cut">
+      <div class="num">03</div>
+      <h3>FIRST 20 WIN BIG</h3>
+      <p>The first 20 paid registrations go into a lucky draw for Franklin shirts, balls and bags.</p>
+    </article>
+  </div>
+</section>
+
+<section class="sec dark pattern" id="prizes">
+  <h2 class="slab inv">PRIZES</h2>
+  <p class="lead">Franklin gear on top of the cash payout in every division.</p>
+  <div class="podium">
+    <div class="pl p1 cut"><span class="pos">1ST</span><h3>Champions</h3><p><span class="ph">[Cash TBC]</span><br><b>+ 2 Franklin paddles</b></p></div>
+    <div class="pl p2 cut"><span class="pos">2ND</span><h3>Runners-up</h3><p><span class="ph">[Cash TBC]</span><br><b>+ 2 Franklin bags</b></p></div>
+    <div class="pl p3 cut"><span class="pos">3RD</span><h3>Third place</h3><p><span class="ph">[Cash TBC]</span><br><b>+ Franklin shirt</b></p></div>
+  </div>
+  <p class="small">Total cash pool: <span class="ph">[TBC]</span>. Every match streamed live on <span class="ph">[platform TBC]</span>.</p>
+</section>
+
+<section class="sec" id="schedule">
+  <h2 class="slab">SCHEDULE &amp; DIVISIONS</h2>
+  <p class="lead">Doubles. Pick the division that fits your level.</p>
+  <div class="rows">
+    <div class="row"><div><h3>Beginner</h3><p class="ph">[Level range TBC]</p></div><div class="time ph">[Time TBC]</div></div>
+    <div class="row"><div><h3>Intermediate</h3><p class="ph">[Level range TBC]</p></div><div class="time ph">[Time TBC]</div></div>
+    <div class="row"><div><h3>Advanced</h3><p class="ph">[Level range TBC]</p></div><div class="time ph">[Time TBC]</div></div>
+  </div>
+  <p class="small">Entry fee: <span class="ph">[Fee TBC]</span> per pair. Format: <span class="ph">[Format TBC]</span>. DUPR, PVNA and other ratings all accepted.</p>
+</section>
+
+<section class="sec reg" id="register">
+  <h2 class="slab">REGISTER</h2>
+  <p class="lead">One minute. One form. We confirm on Zalo.</p>
+
+  <form id="regForm" novalidate>
+    <fieldset>
+      <legend>Your pair</legend>
+      <label>Player 1 name<input name="player1_name" autocomplete="name" required minlength="2" maxlength="80" placeholder="Full name"></label>
+      <div class="rate">
+        <label>Rating<select name="p1_system"><option>DUPR</option><option>PVNA</option><option>VPA</option><option>Other</option><option value="None">No rating</option></select></label>
+        <label>Score<input name="p1_rating" inputmode="decimal" maxlength="20" placeholder="e.g. 3.25"></label>
+      </div>
+      <label>Player 2 name<input name="player2_name" required minlength="2" maxlength="80" placeholder="Full name"></label>
+      <div class="rate">
+        <label>Rating<select name="p2_system"><option>DUPR</option><option>PVNA</option><option>VPA</option><option>Other</option><option value="None">No rating</option></select></label>
+        <label>Score<input name="p2_rating" inputmode="decimal" maxlength="20" placeholder="e.g. 3.0"></label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Division</legend>
+      <div class="seg" role="radiogroup">
+        <label><input type="radio" name="division" value="beginner" required><span>Beginner</span></label>
+        <label><input type="radio" name="division" value="intermediate"><span>Intermediate</span></label>
+        <label><input type="radio" name="division" value="advanced"><span>Advanced</span></label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Contact</legend>
+      <label>Phone / Zalo<input name="phone" type="tel" inputmode="tel" autocomplete="tel" required minlength="8" maxlength="20" placeholder="09xx xxx xxx"></label>
+      <label>Email <em>(optional)</em><input name="email" type="email" autocomplete="email" maxlength="120" placeholder="you@email.com"></label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Playing Franklin?</legend>
+      <p class="hint">Franklin paddle or gear gets you free drinks and exclusive balls at check-in.</p>
+      <div class="seg two" role="radiogroup">
+        <label><input type="radio" name="franklin_gear" value="yes"><span>Yes</span></label>
+        <label><input type="radio" name="franklin_gear" value="no" checked><span>No</span></label>
+      </div>
+    </fieldset>
+
+    <label>Notes <em>(optional)</em><textarea name="notes" rows="2" maxlength="500" placeholder="Anything we should know"></textarea></label>
+
+    <label class="consent"><input type="checkbox" name="consent" required><span>I agree to be contacted about this event and to appear on the livestream.</span></label>
+
+    <p class="err" id="formErr" role="alert" hidden></p>
+    <button type="submit" class="btn btn-main full" id="submitBtn">Send registration</button>
+    <a href="https://zalo.me/84798350171" class="btn-link center" rel="noopener">Prefer Zalo? Message us instead</a>
+  </form>
+
+  <div id="success" class="success cut" hidden tabindex="-1">
+    <div class="tick">✓</div>
+    <h3>YOU'RE IN THE QUEUE</h3>
+    <p>Thanks, <b id="sName"></b>. We'll message you on Zalo at <b id="sPhone"></b> to confirm your spot and payment.</p>
+    <p class="draw">Pay early: the <b>first 20 paid registrations</b> go into the Franklin lucky draw for shirts, balls and bags.</p>
+    <a href="https://zalo.me/84798350171" class="btn btn-main" rel="noopener">Open Zalo now</a>
+    <button type="button" class="btn-link" id="again">Register another pair</button>
+  </div>
+
+  <ol class="steps">
+    <li><b>Send the form</b> with both names, division and ratings.</li>
+    <li><b>We confirm on Zalo</b> and send payment details.</li>
+    <li><b>Pay to lock your spot.</b> First 20 paid enter the lucky draw.</li>
+  </ol>
+</section>
+
+<section class="sec" id="faq">
+  <h2 class="slab">FAQ</h2>
+  <details><summary>Do I need a DUPR rating?</summary><p>No. DUPR, PVNA or any other rating works. No rating? Tell us how you play and we'll help you pick a division.</p></details>
+  <details><summary>Is the event rated?</summary><p><span class="ph">[TBC]</span></p></details>
+  <details><summary>Where can I watch the livestream?</summary><p>Every court streamed live on <span class="ph">[platform / link TBC]</span>.</p></details>
+  <details><summary>How do I get the Franklin perks?</summary><p>Bring a Franklin paddle or wear Franklin gear. Show it at check-in for exclusive Franklin balls, and your drinks are free all day.</p></details>
+  <details><summary>How does the lucky draw work?</summary><p>The first 20 pairs to pay are entered. The draw happens on the day, live on stream <span class="ph">[TBC]</span>.</p></details>
+  <details><summary>How much is it and how do I pay?</summary><p><span class="ph">[Fee TBC]</span> per pair. We send payment details on Zalo after you register.</p></details>
+</section>
+
+<footer class="foot pattern">
+  <p class="pres">Presented by</p>
+  <div class="wm big">FRANKLIN</div>
+  <p class="pres">PICKLEBALL</p>
+  <div class="org">
+    <p>Organised by <b>Papi Point</b>, Da Nang</p>
+    <p><a href="https://zalo.me/84798350171" rel="noopener">Contact on Zalo</a></p>
+  </div>
+  <p class="legal">This is the event's own website. Franklin and Franklin Pickleball are trademarks of Franklin Sports, Inc. and are used here to identify the event sponsor. Demo draft, details subject to change.</p>
+</footer>
+
+<a href="#register" class="sticky-cta" id="stickyCta">Register now</a>
+<script src="app.js?v=1" defer></script>
+</body>
+</html>
