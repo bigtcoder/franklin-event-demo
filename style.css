@@ -224,3 +224,7 @@ select.bad{border-color:#e10600!important;outline:2px solid #e10600}
 .lvl tbody tr:nth-child(odd){background:var(--g)}
 .lvl tr.open{background:var(--k)!important;color:var(--w)}
 .lvl td{font-weight:700}
+/* v14: LIVESTREAMED badge top-left under header logo */
+.hero-live{padding:14px 18px 0;position:relative;z-index:3}
+@media(max-width:899px){.hero-copy .badges{padding-top:14px}}
+@media(min-width:900px){.hero-live{position:absolute;top:0;left:0;padding:16px 18px 0}}
