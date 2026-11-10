@@ -143,3 +143,16 @@ h1 span{display:inline-block;margin-top:6px;background:var(--w);color:var(--k);p
   .hero-art .panel{left:0;right:-50vw;width:auto;clip-path:polygon(130px 0,100% 0,100% 100%,0 100%)}
   .hero-art .cap{top:26px;right:26px;bottom:auto}
 }
+/* v4: Anna Leigh Waters (white kit) on black, charcoal angled panel with white edge stripe */
+.hero-art .panel{background:#1b1b1b}
+.hero-art .panel::before{content:"";position:absolute;inset:0;background:var(--w);clip-path:polygon(28% 0,calc(28% + 12px) 0,12px 100%,0 100%)}
+.hero-art .athlete{filter:drop-shadow(0 14px 30px rgba(0,0,0,.55))}
+@media(max-width:899px){.hero-art{height:min(58vh,470px)}.hero-art .athlete{right:4%}}
+@media(min-width:900px){
+  .hero-art .panel::before{clip-path:polygon(130px 0,144px 0,14px 100%,0 100%)}
+  .hero-art .athlete{right:10%;height:100%}
+  .hero-art .cap{color:#9a9a9a}
+  .hero-art .cap::before{background:var(--w)}
+}
+@media(min-width:900px){.hero-art .cap{top:auto;bottom:26px;right:0;max-width:120px}}
+@media(min-width:900px){.hero-art .athlete{right:16%}}
