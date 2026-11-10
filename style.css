@@ -182,3 +182,30 @@ h1 span{display:inline-block;margin-top:6px;background:var(--w);color:var(--k);p
 .vpa-sub{font:700 10px Inter,sans-serif;letter-spacing:.28em;text-transform:uppercase;margin-top:6px}
 .vpa img{display:block;width:min(200px,52vw);height:auto;margin:2px auto 6px}
 details p a{text-decoration:underline;font-weight:600}
+/* v11: paddle feature + athlete strip */
+.eyebrow{font:700 11px Inter,sans-serif;letter-spacing:.26em;text-transform:uppercase;color:var(--m);margin-bottom:8px}
+.paddle-hero{margin:0 0 18px;position:relative;background:var(--k)}
+.paddle-hero img{display:block;width:100%;height:auto}
+.paddle-hero figcaption,.ath figcaption{position:absolute;left:14px;bottom:12px;color:#fff;font:600 10px Inter,sans-serif;letter-spacing:.18em;text-transform:uppercase;text-shadow:0 1px 6px rgba(0,0,0,.6)}
+.tech{display:grid;gap:12px}
+.tech-card{display:grid;grid-template-columns:112px 1fr;gap:14px;align-items:center;background:var(--g);padding:10px;border-left:6px solid var(--k)}
+.tech-card img{width:112px;height:112px;object-fit:cover;display:block;background:#fff}
+.tech-card h3{font:900 italic 21px/1 "Barlow Condensed",sans-serif;margin-bottom:4px}
+.tech-card p{font-size:14px;color:#333}
+.paddle-prize{margin-top:16px;background:var(--k);color:var(--w);padding:16px 18px;font-size:15px}
+.paddle-prize b{font:900 italic 20px "Barlow Condensed",sans-serif;text-transform:uppercase;margin-right:6px}
+.athletes{display:grid;grid-template-columns:1fr 1fr;gap:4px;background:var(--k);padding:4px 0}
+.ath{position:relative;margin:0;overflow:hidden}
+.ath img{display:block;width:100%;aspect-ratio:4/5;height:auto;object-fit:cover}
+.ath::after{content:"";position:absolute;inset:auto 0 0 0;height:40%;background:linear-gradient(transparent,rgba(0,0,0,.7))}
+.ath figcaption{z-index:1;font:900 italic 20px/1.05 "Barlow Condensed",sans-serif;letter-spacing:0;text-transform:uppercase}
+.ath figcaption span{display:block;font:600 9px Inter,sans-serif;letter-spacing:.2em;opacity:.85;margin-bottom:3px}
+@media(min-width:860px){
+  .tech{grid-template-columns:repeat(3,1fr)}
+  .tech-card{grid-template-columns:1fr;padding:0;border-left:0;border-top:6px solid var(--k)}
+  .tech-card img{width:100%;height:auto;aspect-ratio:1}
+  .tech-card div{padding:14px 16px 18px}
+  .athletes{max-width:1180px;margin:0 auto}
+  .ath figcaption{font-size:30px;left:24px;bottom:22px}
+}
+@media(min-width:860px){.paddle-hero img{aspect-ratio:16/9;object-fit:cover;object-position:50% 45%}}
